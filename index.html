@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Javascript 01</title>
+        <script>
+            alert("olá galera!")
+
+            function trocaFrase(){
+                var fraseAtual = document.getElementById("frase");
+                fraseAtual.innerHTML = "Funcionou, a frase mudou!";
+                fraseAtual.style.color = "pink";
+                fraseAtual.style.fontSize = "25px";
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="frase"onmouseout="trocaFrase();">
+            Olá Mundo
+        </h1>
+    </body>
+</html>
