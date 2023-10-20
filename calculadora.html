@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Calculadora</title>
+
+        <script src="js/myscript.js"></script>
+        <link rel="stylesheet" href="css/style.css"/>
+        <script>
+        function somar(){
+            let campoN1 = document.getElementById("n1")
+            let valorN1 = parseInt(campoN1.value)
+
+            let campoN2 = document.getElementById("n2")
+            let valorN2 = parseInt(campoN2.value)
+        }
+        </script>
+    </head>
+    <body>
+       <h1>Página da Calculadora</h1>
+       <input type="number" placeholder="123" id="n1">
+       <input type="number" placeholder="123" id="n2">
+       =
+       
+       <input type="number" readonly id="r"><br>
+       <button onclick="somar();">+</button>
+       <button onclick="subtrair();">-</button>
+    </body>
+</html>

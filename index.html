@@ -1,20 +1,24 @@
 <html>
     <head>
         <title>Javascript 01</title>
+
         <script>
             alert("olá galera!")
-
-            function trocaFrase(){
-                var fraseAtual = document.getElementById("frase");
-                fraseAtual.innerHTML = "Funcionou, a frase mudou!";
-                fraseAtual.style.color = "pink";
-                fraseAtual.style.fontSize = "25px";
+            function trocarTexto(){
+                var elemento = document.getElementById("frase")
+                var elementoNovo = document.getElementById("novafrase").value
+                elemento.innerHTML = elementoNovo
             }
         </script>
+        <script src="js/myscript.js"></script>
+        <link rel="stylesheet" href="css/style.css"/>
     </head>
     <body>
-        <h1 id="frase"onmouseout="trocaFrase();">
-            Olá Mundo
-        </h1>
+        <h1 ondblclick="mudarFrase()" id="frase">Olá Mundo!</h1>
+        <input id="novafrase" type="text"><br>
+        <input id="botao" type="button"
+        value="Trocar Frase"
+        onclick="trocarTexto();"><br>
+        <a href="calculadora.html">Calculadora</a>
     </body>
 </html>
