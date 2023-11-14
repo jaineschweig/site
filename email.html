@@ -16,13 +16,18 @@
     <a href="https://wa.me/5584733579875?
     text=Teste%20JavaScript">Whatsapp</a>
 
-    <form id="IdForm" action="http://jkorpela.fi/cgi.bin/echo.cgi" method="POST">
-        E-mail <input placeholder="nada@nada.com" 
+    <form id="idForm" action="http://app.headlessforms.cloud/api/v1/form-submission/UF7YAmmfN8" method="POST">
+        E-mail: <input placeholder="nada@nada.com" 
         title="Um email válido!" 
         type="email"
         name="email" 
-        id="idEmail" required>
+        id="idEmail" required><br>
+        Nome:
+        <input type="text" minlength="5" maxlength="12" pattern="[a-z]{5-12}" name="nome" id="idNome" required><br>
+        <textarea name="corpo" id="" cols="33" rows="7"
+         placeholder="O texto do seu e-mail." required></textarea><br>
         <input type="submit" value="Enviar">
+        
         
     </form>
 
